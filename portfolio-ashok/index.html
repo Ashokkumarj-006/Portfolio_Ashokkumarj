@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<title>Ashokkumar Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#111827;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:17px;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.hero{
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:100px 80px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text h3{
+margin-bottom:20px;
+}
+
+.hero-text p{
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:5px;
+margin-top:25px;
+font-weight:bold;
+}
+
+.hero img{
+width:300px;
+height:300px;
+border-radius:50%;
+border:6px solid #38bdf8;
+object-fit:cover;
+
+}
+
+section{
+padding:80px;
+}
+/* Certificates Section */
+
+.certificate-container{
+    display:grid;
+    grid-template-columns:repeat(3, 250px);
+    gap:50px;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.certificate-card{
+    background:#1e293b;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(56,189,248,0.5);
+}
+
+.certificate-card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+    border-radius:10px;
+    border:2px solid #38bdf8;
+    padding: 5px;
+}
+
+.certificate-card p{
+    margin-top:12px;
+    color:#ffffff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-box{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:10px;
+font-weight:bold;
+}
+
+footer{
+background:#111827;
+padding:25px;
+text-align:center;
+}
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#00eeff;
+    color:#081b29;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    margin-right:15px;
+    box-shadow:0 0 15px #00eeff;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#081b29;
+    color:#00eeff;
+    border:2px solid #00eeff;
+}
+
+.social-media{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-media a{
+    width:45px;
+    height:45px;
+    border:2px solid #00eeff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#00eeff;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+}
+
+.social-media a:hover{
+    background:#00eeff;
+    color:#081b29;
+    box-shadow:0 0 20px #00eeff;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#00eeff;
+    color:#081b29;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    margin-right:15px;
+    box-shadow:0 0 15px #00eeff;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#081b29;
+    color:#00eeff;
+    border:2px solid #00eeff;
+}
+
+.social-media{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-media a{
+    width:45px;
+    height:45px;
+    border:2px solid #00eeff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#00eeff;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+}
+
+.social-media a:hover{
+    background:#00eeff;
+    color:#081b29;
+    box-shadow:0 0 20px #00eeff;
+}
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.project-card{
+    background:#1b263b;
+    border-radius:15px;
+    overflow:hidden;
+    padding:20px;
+    margin-bottom: 60px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.project-images{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:170px 170px;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.project-images img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #00eeff;
+}
+
+.project-images img:first-child{
+    grid-row:1 / 3;
+}
+
+.project-features{
+    margin:15px 0;
+    padding-left:20px;
+}
+
+.project-features li{
+    color:#ddd;
+    margin-bottom:8px;
+    list-style: none;
+}
+
+.project-btn{
+    display:inline-block;
+    padding:10px 22px;
+    background:#00eeff;
+    color:#081b29;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+.traffic-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.experience-card {
+    background: #1b1f38;
+    border-left: 5px solid #00bfff;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,191,255,0.3);
+}
+
+.experience-card h3 {
+    color: #00bfff;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.experience-card h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.experience-card .duration {
+    color: #bdbdbd;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.experience-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-card ul li {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        padding: 20px;
+    }
+
+    .experience-card h3 {
+        font-size: 22px;
+    }
+
+    .experience-card h4 {
+        font-size: 16px;
+    }
+
+    .experience-card ul li {
+        font-size: 15px;
+    }
+}
+#achievements{
+    padding:80px 10%;
+    background:#081b29;
+}
+
+.achievement-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.achievement-card{
+    background:#112e42;
+    border:2px solid #00eeff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 0 15px rgba(0,238,255,.2);
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00eeff;
+}
+
+.achievement-card i{
+    font-size:55px;
+    color:#00eeff;
+    margin-bottom:15px;
+}
+
+.achievement-card h3{
+    color:#fff;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.achievement-card p{
+    color:#ddd;
+    font-size:16px;
+    line-height:1.6;
+}
+#contact{
+    padding:80px 10%;
+    background:#081b29;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.contact-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.contact-box i{
+    font-size:35px;
+    color:#00eeff;
+}
+
+.contact-box h3{
+    color:#fff;
+    margin-bottom:5px;
+}
+
+.contact-box p{
+    color:#ccc;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#112e42;
+    color:#fff;
+    outline:none;
+}
+
+.contact-form textarea{
+    resize:none;
+}
+
+.contact-form .btn{
+    width:180px;
+    background:#00eeff;
+    color:#081b29;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.contact-form .btn:hover{
+    box-shadow:0 0 20px #00eeff;
+}
+
+@media(max-width:768px){
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media screen and (max-width:768px){
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+
+    section{
+        padding:50px 20px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    .hero img{
+        width:220px;
+        height:220px;
+        margin-bottom:30px;
+    }
+
+    .hero-text h1{
+        font-size:35px;
+    }
+
+    .hero-text h3{
+        font-size:20px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .social-media{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .skills{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .certificate-container{
+        grid-template-columns:1fr;
+    }
+
+    .achievement-container{
+        grid-template-columns:1fr;
+    }
+
+    .project-container{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .project-images{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+    }
+
+    .project-images img:first-child{
+        grid-row:auto;
+    }
+
+    .calculator-gallery,
+    .bottom-images,
+    .chatbot-bottom{
+        flex-direction:column;
+    }
+
+    .calculator-gallery img,
+    .bottom-images img,
+    .chatbot-bottom img{
+        width:100%;
+        height:auto;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form .btn{
+        width:100%;
+    }
+
+    footer{
+        font-size:14px;
+    }
+
+}
+
+
+.certificate-modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-image{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+    border:3px solid #38bdf8;
+}
+
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:35px;
+    font-size:45px;
+    color:white;
+    cursor:pointer;
+}
+
+.education-row{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:nowrap;
+    margin-top:40px;
+}
+
+.education-card{
+    flex:1;
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    border:2px solid #38bdf8;
+    text-align:center;
+    transition:0.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+.education-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.education-card p{
+    color:#ddd;
+    line-height:1.7;
+}
+@media (max-width:768px){
+
+    .education-row{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .education-card{
+        width:100%;
+    }
+
+}
+
+.btn,
+.project-btn,
+.social-media a,
+.certificate-card img,
+.project-card,
+.achievement-card,
+.contact-box,
+.menu-toggle{
+    cursor: pointer;
+}
+#about{
+    text-align:center;
+}
+
+#about .card{
+    max-width:900px;
+    margin:0 auto;
+    padding:30px;
+}
+
+#about .card p{
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+@media (max-width:768px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero img{
+        order: -1;          /* Image comes first */
+        width: 220px;
+        height: 220px;
+        margin-bottom: 25px;
+    }
+
+    .hero-text{
+        max-width: 100%;
+    }
+
+    .social-media{
+        justify-content: center;
+    }
+}
+@media (max-width:768px){
+
+    .hero-text h1{
+        font-size:32px;
+        line-height:0.8;   /* Reduce gap */
+        margin-bottom:10px;
+    }
+
+    .hello{
+        display:block;
+        margin-bottom:0;
+    }
+
+    .name{
+        display:block;
+        margin-top:0;
+    }
+}
+
+.calculator-images{
+    display:flex;
+    justify-content:center;
+    gap:15px;          /* Space between images */
+    margin-bottom:20px;
+}
+
+.calculator-images img{
+    width:33%;
+    height:500px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #00eeff;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    .calculator-images{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        align-items:center;
+    }
+
+    .calculator-images img{
+        width:100%;
+        height:auto;
+    }
+
+}
+.menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+        position:relative;
+    }
+
+    .logo{
+        font-size:25px;
+        font-weight:bold;
+        color:#38bdf8;
+        padding-left: 10px;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:32px;
+        color:#38bdf8;
+        cursor:pointer;
+    }
+
+    nav ul{
+        display:none;
+        position:absolute;
+        top:65px;
+        right:0;
+        width:220px;
+        background:#111827;
+        flex-direction:column;
+        padding:15px;
+        border-radius:10px;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+}
+
+.contact-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+.contact-info{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    width:100%;
+}
+
+.contact-box{
+    background:#1b1f38;
+    border-radius:12px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+
+@media (max-width:768px){
+    .contact-info{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">ASHOKKUMAR</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <i class='bx bx-menu'></i>
+    </div>
+
+<ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<img src="images/bbbb.jpeg" alt="Profile">
+
+<div class="hero-text">
+
+<h1>
+    <span class="hello">Hello,</span><br>
+    <span class="name">I'm Ashokkumar J</span>
+</h1>
+
+<h3>Computer Science Graduate | Web Developer</h3>
+
+<p>
+
+Passionate about Web Development, IoT and Software
+Development. Dedicated to learning new technologies
+and building innovative solutions.
+
+</p>
+
+<a href="ashok_resume.pdf" target="_blank" class="btn">Download Resume</a>
+
+
+<div class="social-media">
+
+<a href="https://www.linkedin.com/in/ashokkumar-j-879083333/ " target="_blank">
+<i class='bx bxl-linkedin'></i>
+</a>
+
+<a href="https://github.com/Ashokkumarj-006" target="_blank">
+<i class='bx bxl-github'></i>
+</a>
+
+<a href="mailto:ashokkumar.js04@gmail.com">
+<i class='bx bx-envelope'></i>
+</a>
+
+<a href="tel:+919597944416">
+<i class='bx bx-phone'></i>
+</a>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am a passionate and motivated Computer Science and Engineering 
+graduate with a strong interest in Web Development, UI Design, IoT,
+ and Software Development. I enjoy building responsive, user-friendly
+  web applications and continuously improving my technical skills.
+   I have hands-on experience with Python, Java, HTML, CSS, JavaScript,
+    PHP, Bootstrap, and MongoDB through academic projects and internships. 
+    I am a quick learner, a good team player, and always eager to take 
+on new challenges that help me grow as a software developer.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section id="education">
+
+    <h2 class="title">Education</h2>
+
+    <div class="education-row">
+
+        <div class="education-card">
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p>Mailam Engineering College</p>
+            <p>2022 - 2026</p>
+            <p>CGPA: 8.6</p>
+        </div>
+
+        <div class="education-card">
+            <h3>Higher Secondary Education</h3>
+            <p>St. Francis D' Assisi School</p>
+            <p>2022</p>
+            <p>Percentage: 81%</p>
+        </div>
+
+        <div class="education-card">
+            <h3>Secondary Education</h3>
+            <p>St. Francis D' Assisi School</p>
+            <p>2020</p>
+            <p>Percentage: 88%</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">Python</div>
+
+<div class="skill-box">Java</div>
+
+<div class="skill-box">HTML</div>
+
+<div class="skill-box">CSS</div>
+
+<div class="skill-box">JavaScript</div>
+
+<div class="skill-box">PHP</div>
+
+<div class="skill-box">Bootstrap</div>
+
+<div class="skill-box">MongoDB</div>
+
+<div class="skill-box">MySQL</div>
+
+<div class="skill-box">Photoshop</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+
+<div class="project-card">
+
+    <div class="calculator-images">
+
+    <img src="images/calculator/Calculator 1.jpeg" alt="Calculator">
+    <img src="images/calculator/calculator 2.jpeg" alt="Calculator">
+    <img src="images/calculator/calculator 3.jpeg" alt="Calculator">
+
+    </div>
+
+    <div class="project-content">
+
+        <h3>Calculator Web Application</h3>
+
+        <p>
+            A responsive calculator application developed using HTML, CSS,
+            JavaScript, PHP, and Python for performing basic arithmetic operations.
+        </p>
+
+        <ul class="project-features">
+            <li>✔ Addition, Subtraction, Multiplication & Division</li>
+            <li>✔ Percentage (%) calculation</li>
+            <li>✔ Clear and Delete functions</li>
+            <li>✔ Responsive and user-friendly interface</li>
+            <li>✔ Built using HTML, CSS, JavaScript, PHP & Python</li>
+        </ul>
+
+        <a href="https://github.com/YOUR_GITHUB_LINK" class="project-btn">
+            GitHub
+        </a>
+    </div>
+</div>
+
+<div class="project-card">
+
+    <div class="project-images">
+        <img src="images/chatbot/chatbot 1.png" alt="Chatbot Screenshot 1" >
+        <img src="images/chatbot/chatbot 2.jpeg" alt="Chatbot Screenshot 2">
+        <img src="images/chatbot/chatbot 3.jpeg" alt="Chatbot Screenshot 3">
+    </div>
+
+    <div class="project-content">
+
+        <h3>AI Chatbot Application</h3>
+
+        <p>
+            A responsive web-based chatbot developed using HTML, CSS,
+            JavaScript, PHP, and MySQL.
+        </p>
+
+        <ul class="project-features">
+            <li>✔ Automated chatbot responses</li>
+            <li>✔ Interactive chat interface</li>
+            <li>✔ Database connectivity using MySQL</li>
+            <li>✔ Responsive web design</li>
+            <li>✔ User-friendly interface</li>
+        </ul>
+
+        <a href="https://github.com/YOUR_GITHUB_LINK" class="project-btn">
+            GitHub
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="project-card">
+
+    <div class="project-images">
+        <img src="images/Smart to Irrigation/Irrigation 1.jpeg" alt="Hardware Setup">
+        <img src="images/Smart to Irrigation/Irrigation 2.jpeg" alt="Blynk App">
+        <img src="images/Smart to Irrigation/Irrigation 3.jpeg" alt="Circuit Diagram">
+    </div>
+
+    <div class="project-content">
+
+        <h3>Smart IoT Based Dual Farm Irrigation System</h3>
+
+        <p>
+            An IoT-based smart irrigation system using ESP32 that
+            automatically controls irrigation based on soil moisture,
+            rainfall, and temperature. It supports dual farm monitoring
+            with GSM alerts and real-time monitoring.
+        </p>
+
+        <ul class="project-features">
+            <li>✔ Automatic Irrigation Control</li>
+            <li>✔ Rain Detection</li>
+            <li>✔ GSM SMS Alerts</li>
+            <li>✔ LCD Status Display</li>
+            <li>✔ Dual Farm Monitoring</li>
+        </ul>
+
+        <a href="https://github.com/YOUR_GITHUB_LINK" class="project-btn">
+            GitHub
+        </a>
+
+    </div>
+
+</div>
+
+<div class="project-card">
+
+    <img src="images/traffic img.jpeg" class="project-images" alt="Traffic Management" width="100%">
+
+    <div class="project-content">
+        <h3>IoT-Based Traffic Light Control System</h3>
+
+        <p>
+            An IoT-enabled traffic management system using ESP32 and the
+            Blynk platform for remote monitoring and control. The project
+            dynamically controls traffic signals and provides real-time
+            monitoring through a web dashboard.
+        </p>
+
+        <h4>Technologies Used</h4>
+        <p>ESP32 • Blynk IoT • Arduino IDE • Wokwi • C++</p>
+
+        <ul class="project-features">
+    <li>✔ Smart Traffic Signal Control</li>
+    <li>✔ Vehicle Detection</li>
+    <li>✔ ESP32 Automation</li>
+    <li>✔ Automatic Signal Switching</li>
+    <li>✔ Real-Time Monitoring</li>
+</ul>
+
+        <a href="https://github.com/YOUR_GITHUB_LINK" class="project-btn">
+            GitHub
+        </a>
+    </div>
+</div>
+
+
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">Experience</h2>
+
+<div class="experience-card">
+
+    <h3>Web Development Intern</h3>
+
+    <h4>CodeBind Technologies, Chennai</h4>
+
+    <p class="duration">24 Feb 2026 – 23 Mar 2026</p>
+
+    <ul>
+        <li>✔ Successfully completed a one-month Inplant Training in Web Development.</li>
+        <li>✔ Developed responsive web pages using HTML, CSS, Bootstrap, and JavaScript.</li>
+        <li>✔ Built dynamic web applications using PHP and MySQL.</li>
+        <li>✔ Successfully completed a Chatbot project using HTML, CSS, JavaScript, PHP, and MySQL.</li>
+        <li>✔ Participated in an Artificial Intelligence Workshop and enhanced practical development skills.</li>
+    </ul>
+
+</div>
+
+
+</section>
+
+
+<section id="certificates">
+
+<h2 class="title">Certificates</h2>
+
+<div class="certificate-container">
+
+<div class="certificate-card">
+<img src="images/IBMDesign.jpg" alt="IBM Certificate" onclick="openModal(this)">
+<p>IBM SkillBuild</p>
+</div>
+
+<div class="certificate-card">
+<img src="images/MongaDB.jpg" alt="IBM Certificate" onclick="openModal(this)">
+<p>MongoDB</p>
+</div>
+
+<div class="certificate-card">
+<img src="images/python intermidiate.jpeg" alt="IBM Certificate" onclick="openModal(this)">
+<p>Python - SoloLearn</p>
+</div>
+
+
+<div class="certificate-card">
+<img src="images/java.jpeg" alt="IBM Certificate" onclick="openModal(this)">
+<p>Advanced Java</p>
+</div>
+
+<div class="certificate-card">
+<img src="images/NM.jpg" alt="IBM Certificate" onclick="openModal(this)">
+<p>Naan Mudhalvan</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="achievements">
+
+    <h2 class="title">Accomplishmments</h2>
+
+    <div class="achievement-container">
+
+        <div class="achievement-card">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development Internship</h3>
+            <p>Successfully completed a Web Development Internship at <b>Code Bind Tech, Chennai</b>.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class='bx bx-trophy'></i>
+            <h3>Sports Achievement</h3>
+            <p>Runner-up in Zone Level <b>Volleyball, Football, and Kho Kho</b> tournaments.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class='bx bx-book-open'></i>
+            <h3>Technical Events</h3>
+            <p>Participated in <b>Paper Presentation, Connections, Debugging, and Code Golf</b> at Puducherry Technological University.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class='bx bx-award'></i>
+            <h3>Abacus Competition</h3>
+            <p>Secured <b>2nd Place</b> in the Inter School Level V Genius Abacus & Mental Competition at E.S. Engineering College, Villupuram.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class='bx bx-certification'></i>
+            <h3>Advanced Java Programming</h3>
+            <p>Completed <b>Advanced Java Programming (AJP-1)</b> conducted by Anudip Foundation with Grade A.</p>
+        </div>
+
+        <div class="achievement-card">
+            <i class='bx bx-file'></i>
+            <h3>Patent Publication</h3>
+            <p><b>Application Number:202341046454.</b></p>
+            <p>Published a patent on <b>Intelligent Accident Location Tracking and Routing System for Emergency Medical Services</b>.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <div class="contact-box">
+                <i class='bx bx-phone'></i>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 9597944416</p>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <i class='bx bx-envelope'></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>ashokkumar.js04@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <i class='bx bx-map'></i>
+                <div>
+                    <h3>Location</h3>
+                    <p>Tindivanam, Tamil Nadu</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/ashokkumar-j-879083333/" target="_blank">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+
+            <a href="https://github.com/Ashokkumarj-006" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+
+            <a href="https://wa.me/919597944416" target="_blank">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+© 2026 Ashokkumar Portfolio
+
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
+</script>
+
+<div id="certificateModal" class="certificate-modal">
+
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+
+    <img id="modalImage" class="modal-image">
+
+</div>
+
+<script>
+function openModal(img){
+    document.getElementById("certificateModal").style.display = "flex";
+    document.getElementById("modalImage").src = img.src;
+}
+
+function closeModal(){
+    document.getElementById("certificateModal").style.display = "none";
+}
+
+document.getElementById("certificateModal").onclick = function(e){
+    if(e.target === this){
+        closeModal();
+    }
+}
+</script>
+
+
+
+</body>
+
+</html>
